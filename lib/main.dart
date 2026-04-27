@@ -3,10 +3,25 @@ import 'dart:collection';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const OnlineShop());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class OnlineShop extends StatelessWidget {
+  const OnlineShop({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.white,
+
+        body: SafeArea(
+            child: SingleChildScrollView(
+            ),
+        ),
+        ),
+        
+    );
 }
-  
+}
