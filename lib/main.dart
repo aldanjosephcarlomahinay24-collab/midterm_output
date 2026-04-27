@@ -18,7 +18,11 @@ class OnlineShop extends StatelessWidget {
 
         body: SafeArea(
             child: SingleChildScrollView(
-              child: Column(),
+              child: Column(
+                children: [
+                  Text("data"),
+                ],
+              ),
             ),
         ),
         ),
